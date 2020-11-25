@@ -1,3 +1,4 @@
+const { deleteOne } = require('../models/plant');
 const Plant = require('../models/plant')
 
 
@@ -6,7 +7,8 @@ module.exports = {
     show,
     new: newPlant,
     create,
-    edit
+    edit,
+    // delete: deletePlant
 };
 
 
@@ -39,6 +41,14 @@ function create(req, res) {
     });
 }
 
+// function deletePlant(req, res) {
+//     Plant.deleteOne(req.params.id);
+//     res.redirect('/plants');
+// }
+
 function edit(req, res) {
-    
+    res.render('plants/edit.ejs', {
+        plantId: req.params.id,
+        plant: Plant.getOne(req.params.id)
+    });
 }

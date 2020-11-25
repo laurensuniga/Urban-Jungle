@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plants</title>
 </head>
+
 <body>
     <section id="show-page">
         <div>Species: </div>
@@ -17,7 +19,17 @@
         <div><%= plant.petFriendly ? 'Yes' : 'No' %></div>
         <div>Notes: </div>
         <div><%= plant.notes %></div>
-      </section>
-      <a href="/edit">Edit Review</a>
-</body>
+    </section>
+    <a href="/plants/edit">Edit Review</a>
+    <!-- <ul>
+         plants.forEach(function(plant, idx) { %>
+            <li>
+                <form action="/plants/ idx %>?_method=DELETE" method="POST">
+                <button type="submit">Delete Plant</button>
+                </form>
+            </li>
+         }) %>
+    </ul> -->
+    </body>
+
 </html>
