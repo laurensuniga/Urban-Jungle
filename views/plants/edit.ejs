@@ -10,11 +10,11 @@
 
     <form action="/plants/<%= plant._id %>?_method=PUT" method="POST">
         <label>Light:</label>
-        <input type="text" name="text" value="<%= plant.light %>">
+        <input type="text" name="light" value="<%= plant.light %>">
         <label>Watering:</label>
-        <input type="text" name="text" value="<%= plant.watering %>">
+        <input type="text" name="watering" value="<%= plant.watering %>">
         <label>Notes:</label>
-        <input type="text" name="text" value="<%= plant.notes %>">
+        <input type="text" name="notes" value="<%= plant.notes %>">
         <input type="submit" value="Edit Plant">
     </form>
 

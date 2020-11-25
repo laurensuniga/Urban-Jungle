@@ -8,7 +8,8 @@ module.exports = {
     new: newPlant,
     create,
     edit,
-    delete: deletePlant
+    delete: deletePlant,
+    update
 };
 
 
@@ -49,6 +50,13 @@ function edit(req, res) {
         });
     })
 }
+
+function update(req, res) {
+    Plant.findByIdAndUpdate(req.params.id, req.body, function() {
+        res.redirect('/plants')
+    })
+}
+
 
 function deletePlant(req, res) {
     Plant.findByIdAndRemove(req.params.id, function(err) {
