@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Plant</title>
+</head>
+<body>
+    <form id="new-form" action="/plants" method="POST">
+        <label>Species:</label>
+        <input type="text" name="species">
+        <label>Light:</label>
+        <select name="light">
+            <option value="direct">Direct</option>
+            <option value="indirect">Indirect</option>
+        </select>
+        <label>Water:</label>
+        <input type="text" name="watering">
+        <label>Pet Friendly</label>
+        <select name="petFriendly">
+          <option value="yes">YES</option>
+          <option value="no">NO</option>
+        </select>
+        <input type="submit" value="Add Plant">
+      </form>
+</body>
+</html>

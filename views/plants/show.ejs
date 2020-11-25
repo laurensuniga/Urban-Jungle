@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants</title>
+</head>
+<body>
+    <section id="show-page">
+        <div>Species: </div>
+        <div><%= plant.species %></div>
+        <div>Light: </div>
+        <div><%= plant.light %></div>
+        <div>Water: </div>
+        <div><%= plant.watering %></div>
+        <div>Pet Friendly: </div>
+        <div><%= plant.petFriendly ? 'Yes' : 'No' %></div>
+        <div>Notes: </div>
+        <div><%= plant.notes %></div>
+      </section>
+      <a href="/edit">Edit Review</a>
+</body>
+</html>
