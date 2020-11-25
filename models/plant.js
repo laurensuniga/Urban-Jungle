@@ -24,13 +24,5 @@ const plantSchema = new Schema({
 });
 
 
-function getOne(id) {
-    return todos[id];
-}
-
-module.exports= {
-    getOne
-}
-
 
 module.exports = mongoose.model('Plant', plantSchema);

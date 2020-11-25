@@ -20,16 +20,11 @@
         <div>Notes: </div>
         <div><%= plant.notes %></div>
     </section>
-    <a href="/plants/edit">Edit Review</a>
-    <!-- <ul>
-         plants.forEach(function(plant, idx) { %>
-            <li>
-                <form action="/plants/ idx %>?_method=DELETE" method="POST">
-                <button type="submit">Delete Plant</button>
-                </form>
-            </li>
-         }) %>
-    </ul> -->
-    </body>
+    <a href="/plants/<%= plant._id %>/edit">Edit Plant</a>
+    <form action="<%= plant._id %>?_method=DELETE" method="POST">
+        <button type="submit">Delete</button>
+    </form>
+
+</body>
 
 </html>

@@ -8,9 +8,14 @@
 <body>
     <h1>Edit <%= plant.species %></h1>
 
-    <form action="/plants/<%= plantId %>?_method=PUT" method="POST">
-        <input type="text" name="text" value="<%= plant.text %>">
-        <input type="submit" value="Edit Todo">
+    <form action="/plants/<%= plant._id %>?_method=PUT" method="POST">
+        <label>Light:</label>
+        <input type="text" name="text" value="<%= plant.light %>">
+        <label>Watering:</label>
+        <input type="text" name="text" value="<%= plant.watering %>">
+        <label>Notes:</label>
+        <input type="text" name="text" value="<%= plant.notes %>">
+        <input type="submit" value="Edit Plant">
     </form>
 
     <a href="/plants">Exit Edit</a>
