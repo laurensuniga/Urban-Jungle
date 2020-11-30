@@ -8,6 +8,16 @@
 </head>
 
 <body>
+    <ul>
+        <li>
+            <% if(user) { %>
+            <a href="/logout">
+                <i class="material-icons left">trending_flat</i>Logout</a>
+            <% } else { %>
+            <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
+            <% } %>
+        </li>
+    </ul>
     <table id="list">
         <thead>
             <tr>
@@ -29,7 +39,13 @@
         <p><%= 'no plants yet' %></p>
         <% } %>
     </table>
-    <a href="/plants/new">Add a New Plant</a>
+    <% if(user._id.equals(user && user._id)) { %>
+    <div class="card-action">
+        <form action="/plants" method="POST">
+            <a href="/plants/new">Add a New Plant</a>
+        </form>
+    </div>
+    <% } %>
 </body>
 
 </html>

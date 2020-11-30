@@ -16,7 +16,11 @@ module.exports = {
 function index(req, res) {
     Plant.find({}, function(err, plants) {
         console.log(err)
-        res.render('plants/index', { title: 'All Plants', plants });
+        res.render('plants/index', { 
+            title: 'All Plants', 
+            plants,
+            user: req.user
+        });
     });
 }
 
