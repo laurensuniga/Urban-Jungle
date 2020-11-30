@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/plants',{ 
+mongoose.connect(process.env.DATABASE_URL || 'mongodb://localhost/plants',{ 
     useNewUrlParser: true, 
     useCreateIndex: true,
     useUnifiedTopology: true 
@@ -9,6 +9,10 @@ mongoose.connect('mongodb://localhost/plants',{
 
 const db = mongoose.connection;
 
-db.on('connected', function () {
-  console.log(`Connected to MongoDB at ${db.host}:${db.port}`);
+db.on('connected', function() {
+  console.log(`Mongoose connected to ${db.host}:${db.port}`);
+});
+
+db.on('error', function(error) {
+  console.log(`Encountered an error: ${error.message}`);
 });
