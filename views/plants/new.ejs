@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+<%- include('../partials/header') %>
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Plant</title>
-</head>
+</head> -->
 <body>
     <form id="new-form" action="/plants" method="POST">
         <label>Species:</label>
@@ -25,5 +27,6 @@
         <input type="text" name="notes">
         <input type="submit" value="Add Plant">
       </form>
-</body>
-</html>
+
+
+<%- include('../partials/footer') %>

@@ -3,5 +3,33 @@
 }
 
 body {
-    background-color: darkgreen;
+    background: url("")
+}
+
+#header {
+    display: flex;
+    justify-content: right;
+    border-radius: 3px;
+    background-color: slategray;
+}
+
+.about {
+    padding: 10px;
+    color: black;
+}
+
+.plants{
+    padding: 10px;
+    color: black;
+}
+
+#about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#new-form {
+    display: flex;
+    justify-content: center;
 }

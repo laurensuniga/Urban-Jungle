@@ -31,10 +31,10 @@ app.use(session({
     saveUninitialized: true
 }));
 
-// app.use(function(req, res, next) {
-//     console.log(req.session);
-//     next();
-// });
+app.use(function(req, res, next) {
+    console.log(req.session);
+    next();
+});
 
 app.use(passport.initialize());
 app.use(passport.session());
