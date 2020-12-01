@@ -1,27 +1,22 @@
 <%- include('../partials/header') %>
 
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit</title>
-</head> -->
 <body>
-    <h1>Edit <%= plant.species %></h1>
-
-    <form action="/plants/<%= plant._id %>?_method=PUT" method="POST">
-        <label>Light:</label>
-        <input type="text" name="light" value="<%= plant.light %>">
-        <label>Watering:</label>
-        <input type="text" name="watering" value="<%= plant.watering %>">
-        <label>Notes:</label>
-        <input type="text" name="notes" value="<%= plant.notes %>">
-        <input type="submit" value="Edit Plant">
-    </form>
-
-    <a href="/plants">Exit Edit</a>
+    <section id="edit-page">
+        <h1>Edit <%= plant.species %></h1>
+    
+        <form action="/plants/<%= plant._id %>?_method=PUT" method="POST">
+            <label id="light2">Light:</label>
+            <input type="text" name="light" value="<%= plant.light %>">
+            <label id="watering2">Watering:</label>
+            <input type="text" name="watering" value="<%= plant.watering %>">
+            <label id="notes2">Notes:</label>
+            <input type="text" name="notes" value="<%= plant.notes %>">
+            <input type="submit" value="Edit Plant">
+        </form>
+    
+        <a href="/plants">Exit Edit</a>
+    </section>
+    
     
 
 <%- include('../partials/footer') %>

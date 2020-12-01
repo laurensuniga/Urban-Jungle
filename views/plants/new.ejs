@@ -9,21 +9,21 @@
 </head> -->
 <body>
     <form id="new-form" action="/plants" method="POST">
-        <label>Species:</label>
+        <label id="species">Species:</label>
         <input type="text" name="species">
-        <label>Light:</label>
+        <label id="light">Light:</label>
         <select name="light">
             <option value="direct">Direct</option>
             <option value="indirect">Indirect</option>
         </select>
-        <label>Water:</label>
+        <label id="water">Water:</label>
         <input type="text" name="watering">
-        <label>Pet Friendly</label>
+        <label id="pet-friendly">Pet Friendly</label>
         <select name="petFriendly">
           <option value="yes">YES</option>
           <option value="no">NO</option>
         </select>
-        <label>Notes:</label>
+        <label id="notes">Notes:</label>
         <input type="text" name="notes">
         <input type="submit" value="Add Plant">
       </form>

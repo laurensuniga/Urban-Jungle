@@ -2,34 +2,160 @@
     box-sizing: border-box;
 }
 
+
 body {
-    background: url("")
+    background-image: url("https://image.freepik.com/free-photo/tropical-green-leaves-background_53876-88891.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #header {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     border-radius: 3px;
-    background-color: slategray;
+    background-color: #0e2316;
+    font-family: 'Poiret One', cursive;
+    padding: 20px;
 }
 
 .about {
     padding: 10px;
-    color: black;
+    color: white;
+    font-family: 'Raleway', sans-serif;
 }
 
 .plants{
     padding: 10px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+#logout {
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
     color: black;
+    margin-top: 400px;
+}
+
+#login {
+    display: flex;
+    justify-content: right;
 }
 
 #about-page {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin-left: 418px;
+    margin-top: 40px;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+#show-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: lightgray;
+    width: fit-content;
+    margin-left: 418px;
+}
+
+#species3 {
+    margin: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#light3 {
+    margin: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#water3 {
+    margin: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#pet-friendly3 {
+    margin: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#notes3 {
+    margin: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#links {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 150px;
+}
+
+
+#list {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#edit-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.card-action {
+    display: flex;
     justify-content: center;
 }
 
+
 #new-form {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    font-size: 20px;
+}
+
+#species {
+    margin: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#light {
+    margin: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#water {
+    margin: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#pet-friendly {
+    margin: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#notes {
+    margin: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#welcome {
+    font-family: 'Major Mono Display', monospace;
 }

@@ -1,33 +1,26 @@
 <%- include('../partials/header') %>
 
 
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plants</title>
-</head> -->
-
 <body>
     <section id="show-page">
-        <div>Species: </div>
+        <div id="species3">Species: </div>
         <div><%= plant.species %></div>
-        <div>Light: </div>
+        <div id="light3">Light: </div>
         <div><%= plant.light %></div>
-        <div>Water: </div>
+        <div id="water3">Water: </div>
         <div><%= plant.watering %></div>
-        <div>Pet Friendly: </div>
+        <div id="pet-friendly3">Pet Friendly: </div>
         <div><%= plant.petFriendly ? 'Yes' : 'No' %></div>
-        <div>Notes: </div>
+        <div id="notes3">Notes: </div>
         <div><%= plant.notes %></div>
     </section>
-    <a href="/plants/<%= plant._id %>/edit">Edit Plant</a>
-    <form action="<%= plant._id %>?_method=DELETE" method="POST">
-        <button type="submit">Delete</button>
-    </form>
-    <a href="/plants">Return to All Plants</a>
+    <div id="links">
+        <a href="/plants/<%= plant._id %>/edit">Edit Plant</a>
+        <form action="<%= plant._id %>?_method=DELETE" method="POST">
+            <button type="submit">Delete</button>
+        </form>
+        <a href="/plants">Return to All Plants</a>
+    </div>
 
 
 <%- include('../partials/footer') %>
