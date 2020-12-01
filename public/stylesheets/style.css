@@ -6,7 +6,7 @@
 body {
     background-image: url("https://image.freepik.com/free-photo/tropical-green-leaves-background_53876-88891.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 #header {
@@ -105,19 +105,32 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 #edit-page {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     color: white;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+#exit-edit {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 400px;
 }
 
 .card-action {
     display: flex;
     justify-content: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -134,28 +147,45 @@ body {
 #species {
     margin: 15px;
     font-family: 'Raleway', sans-serif;
+    color: white;
 }
 
 #light {
     margin: 15px;
     font-family: 'Raleway', sans-serif;
+    color: white;
 }
 
 #water {
     margin: 15px;
     font-family: 'Raleway', sans-serif;
+    color: white;
 }
 
 #pet-friendly {
     margin: 15px;
     font-family: 'Raleway', sans-serif;
+    color: white;
 }
 
 #notes {
     margin: 15px;
     font-family: 'Raleway', sans-serif;
+    color: white;
 }
 
 #welcome {
     font-family: 'Major Mono Display', monospace;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 140px;
+}
+
+#home-links {
+    color: lightgrey;
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
 }
