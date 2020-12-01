@@ -17,8 +17,7 @@ MongoDB
 ![](public/images/Urban%20Jungle%20wireframe%20info%20page.png)
 
 # Getting Started
-https://laurensuniga.github.io/Urban-Jungle/
-
+https://urban-jungle-v1.herokuapp.com/
 
 
 # Next Steps
