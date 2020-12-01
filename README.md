@@ -11,10 +11,7 @@ MongoDB
 
 
 # Wireframes
-![](public/images/Urban%20Jungle%20wireframe%20homepage.png)
-![](public/images/Urban%20Jungle%20wirefram%20about%20page.png)
-![](public/images/Urban%20Jungle%20wireframe%20Plant%20page.png)
-![](public/images/Urban%20Jungle%20wireframe%20info%20page.png)
+
 
 
 
