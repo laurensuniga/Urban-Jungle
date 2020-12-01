@@ -54,21 +54,17 @@ body {
     margin-top: 40px;
     text-align: center;
     color: white;
-    /* background-color: lightgrey; */
+    font-family: 'Raleway', sans-serif;
 }
 
 #show-page {
     display: flex;
-    position: relative;
     justify-content: center;
-    text-align: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 30px;
-    /* background-color: lightgray; */
-    width: fit-content;
-    margin-left: 440px;
     color: white;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 #species3 {
