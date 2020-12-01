@@ -16,7 +16,6 @@ MongoDB
 ![](public/images/Urban%20Jungle%20wireframe%20Plant%20page.png)
 ![](public/images/Urban%20Jungle%20wireframe%20info%20page.png)
 
-
 # Getting Started
 https://laurensuniga.github.io/Urban-Jungle/
 
