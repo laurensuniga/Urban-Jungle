@@ -11,7 +11,7 @@ MongoDB
 
 
 # Wireframes
-![](/public/images//Users/laurensuniga/GA-Class/project-2/public/images/Urban%20Jungle%20wireframe%20homepage.png)
+![](images/Urban%20Jungle%20wireframe%20homepage.png)
 
 
 # Getting Started
