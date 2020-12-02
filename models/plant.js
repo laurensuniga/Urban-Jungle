@@ -21,7 +21,6 @@ const plantSchema = new Schema({
     notes: {
         type: String
     },
-    // googleId: String
 });
 
 

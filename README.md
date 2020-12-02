@@ -3,10 +3,12 @@ This app was created for those who, like me, have quite a few different house pl
 
 
 # Technologies Used
-HTML
-CSS
+HTML 5
+CSS3
 JavaScript
-NodeJS
+Express
+Node.js
+Mongoose
 MongoDB
 
 
